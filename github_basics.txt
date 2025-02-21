@@ -1,0 +1,67 @@
+Setting Up SSH:
+
+Check if there are any existing SSH keys in your laptop by this command:
+    ls -al ~/.ssh
+        Explanation:
+            ls => to list all the files
+            ~al => it even lists the hidden files
+            ~/.ssh => to list all the files in the .ssh folder
+                ~ means home directory, to check what is the value of ~ [ use this command: echo ~]
+                ssh keys are generally stored in home directory's .ssh hidden file. so we are checking there.
+
+If there are no keys, you can create one by this command:
+    ssh-keygen -t ed25519 -C "your-email@example.com"
+        Explanation:
+            This command generates SSH keys using the ed25519 algorithm.
+            ssh-keygen => The tool used to generate SSH keys.
+            -t ed25519 => Specifies the Ed25519 algorithm (more secure & faster than RSA).
+            -C "your-email@example.com"	=> Adds a comment (your email) to the key for identification. (in pub key)
+
+After creating ssh keys, run the ssh agent by using the command:
+    eval "$(ssh-agent -s)"
+        Explanation:
+            ssh-agent => The tool used to manage SSH keys.
+            -s => Start the ssh-agent.
+            eval => Run the command and store the output in a variable. (it give the pid of ssh agent)
+
+Add your SSH key to the ssh-agent by using the command:
+    ssh-add ~/.ssh/id_ed25519
+        Explanation:
+            ssh-add => The tool used to add SSH keys to the ssh-agent.
+            ~/.ssh/id_ed25519 => The path to the SSH key file you want to add.
+
+
+Copy the public key to your GitHub account by using the command:
+    pbcopy < ~/.ssh/id_ed25519.pub
+        Explanation:
+            pbcopy => The tool used to copy text to the clipboard.
+            < ~/.ssh/id_ed25519.pub => The path to the SSH key file you want to copy.
+
+Now, add this public key to the github.
+
+Test the SSH connection by this command:
+    ssh -T git@github.com
+        Explanation:
+            ssh => The tool used to establish an SSH connection.
+            -T => Test the SSH connection.
+            git@github.com => The GitHub repository URL.
+
+
+Creating the Repository:
+
+Create the repository online in github.
+
+Clone the repository by this command:
+    git clone git@github.com:username/repository-name.git
+        Explanation:
+            git => The tool used to manage Git repositories.
+            clone => The command used to clone a repository.
+            git@github.com:username/repository-name.git => The URL of the repository you want to clone.
+
+Now, a new folder will get created.
+go inside the folder and make necessary changes
+
+and do these commands:
+    git add abc.txt
+    git commit -m "first commit"
+    git push origin main
