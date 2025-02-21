@@ -65,3 +65,11 @@ and do these commands:
     git add abc.txt
     git commit -m "first commit"
     git push origin main
+
+To ignore certain files:
+    touch .gitignore => a new file will get created
+    here you add the directory which you want to ignore
+    example:
+        node_modules/ => Ignore the node_modules folder.
+        *.log => Ignore all .log files
+        .idea/ => Ignore the .idea folder.
