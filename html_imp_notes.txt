@@ -1,0 +1,17 @@
+Refer to https://www.w3schools.com/html/html_intro.asp for detailed notes on html.
+
+<!DOCTYPE html> =>
+    This is the doctype declaration. It tells the browser that the document is an HTML document.
+    [it in not case sensitive]. this should appear in the top of the document before any tag.
+<html> => This is the root element of the HTML document.
+<head> => This is the head element of the HTML document. It contains metadata about the document.
+<title> => This is the title element of the HTML document. It contains the title of the document.
+<body> => This is the body element of the HTML document. It contains the content of the document.
+
+
+Some elements have starting tag and ending tag. some do not like <br> [<a> , </a>]
+
+The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them correctly.
+A browser does not display the HTML tags, but uses them to determine how to display the document.
+
+Some HTML elements will display correctly, even if you forget the end tag, but try not to forget the end tag.
