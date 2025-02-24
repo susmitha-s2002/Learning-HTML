@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<!-- Lang has to be mentioned for better searchability, and for readers to understand and for assistive technology-->
+<html lang="en-US">
     <head>
         <title>page title</title>
     </head>
     <body>
+        <!-- browser adds some space before and after the paragraph and headings -->
         <h1>h1 heading</h1>
         <h2>h2 heading</h2>
         <h3>h3 heading</h3>
         <h4>h4 heading</h4>
         <h5>h5 heading</h5>
         <h6>h6 heading</h6>
-        <p>paragraph</p>
+        <h1 style="font-size: 100px;">H1 Heading with size as 100px</h1>
+        <p title="when you hover this, the value of title attribute will be shown">paragraph</p>
         <p style="color:red;"> red text paragraph</p>
 
 
@@ -26,5 +29,43 @@
 
         <h4>Image from the web url:</h4>
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_120x44dp.png" alt="this text will be shown if image is not loaded" width="200px;" height="100px;">
+
+        <h3> Even if you give spaces in the text
+
+        it won't be shown like that in html.
+            it will automatically remove the spaces.</h3>
+
+        <!-- to add horizontal line, we need to use hr tag-->
+        <hr>
+
+        <!-- to add line break, add br tag-->
+        <h3> hello this is h3 before line break</h3>
+        <br>
+        <h3>hello this is h3 after line break</h3>
+
+        <!-- this is the problem with poem, all will be shown in one line-->
+        <p>
+          My Bonnie lies over the ocean.
+
+          My Bonnie lies over the sea.
+
+          My Bonnie lies over the ocean.
+
+          Oh, bring back my Bonnie to me.
+        </p>
+
+        <!-- pre tag will show the text as it is. it preserves both spaces and line breaks-->
+        <pre>
+            My Bonnie lies over the ocean.
+            My Bonnie lies over the sea.
+
+          My Bonnie lies over the ocean.
+
+          Oh, bring back my Bonnie to me.
+        </pre>
+
+        <!-- to add styling fo html tags, use the following syntax-->
+        <h3 style="color:blue; background-color:red; font-family:courier;">this is h3 in red color with blue background with courier font family.</h3>
+        <h3 style="font-size:50px; text-align:center;">this is h3 with font-size 50px and text-align: center</h3>
     </body>
 </html>
