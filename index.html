@@ -3,6 +3,11 @@
 <html lang="en-US">
     <head>
         <title>page title</title>
+        <style>
+            h5{
+                color: blue;
+            }
+        </style>
     </head>
     <body>
         <!-- browser adds some space before and after the paragraph and headings -->
@@ -101,5 +106,48 @@
         </address>
         <p><cite>This article </cite> is cited from the web page. it will be in italic</p>
         <p><bdo dir="rtl">This text will be printed from right to left</bdo></p>
+
+        <p>*************</p>
+        <h2> Colors</h2>
+
+        <h1 style="background-color: red; color: yellow;">The background color is red, text color is yellow</h1>
+        <h1 style="background-color: rgb(255, 99, 71);">The background color is brick color.</h1>
+        <h1 style="background-color: rgba(255, 99, 71, 0.3);">
+            The background color is brick color.  here in the color i have added last letter called a, a means alpha (which tells how thick the color has to be) 0:transaprent 1:not transparent
+        </h1>
+
+        <h5>this is h5 with styling</h5>
+
+        <p>*****</p>
+        <h2>Links</h2>
+        <a href="https://www.google.com/">link for google. by default target="self" that means new page will open in same window</a><br>
+        <a href="https://www.google.com/" target="_blank">link for google will open in new tab. because target is set to blank in a tag.</a>
+        <br>
+        <a href="img.png">Click on this to go to img </a>
+        <br>
+        <p> the below image is a link, click on it. </p>
+        <a href="https://www.instagram.com"><img src="img.png" style="height:50px; width:50px;"></a><br>
+        <a href="mailto:sighakollisusmitha@gmail.com">to send mail</a><br>
+        <a href="img.png"><button>btn as link</button></a><br> <br>
+        <a href="https://www.facebook.com" title="facebook site"> facebook link</a>
+        <br>
+
+        <a href="#abc">this is book mark to div id</a>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <div id="abc"><p>abc div</p></div>
+
+        <p> the below one is a gif</p>
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW53c2FuNjF4b2FuNnQ0MmoyODEweDhzdGl4NTIxZnl3aHBkYXFiNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PkbdgoN6eUd2omXNk1/giphy.gif" alt="Computer Man" style="width:48px;height:48px;">
+
     </body>
 </html>
