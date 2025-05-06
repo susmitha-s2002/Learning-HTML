@@ -1,0 +1,71 @@
+Headings (h1 to h6):
+  these are used to define titles or section headings in the page.
+    <h1>Main heading</h1>
+    <h2>Sub heading</h2>
+    .
+    .
+    <h6>smallest heading</h6>
+
+
+Paragraph:
+  used to display text on the page.
+  browser puts each p tag in new line.
+    <p> this is paragraph </p>
+
+
+Line Break:
+  this is done by <br> tag. does not have closing tag.
+
+
+Horizontal rule:
+  this will add a horizontal line. this is done by <hr> tag. no closing tag needed.
+
+
+Text formatting tags: These tags are used to format the text:
+| Tag        | Meaning           | What it does (visually)      |
+| ---------- | ----------------- | ---------------------------- |
+| `<b>`      | Bold              | Makes text bold (no meaning) |
+| `<strong>` | Strong importance | Bold + meaningful emphasis   | (for screen readers, visually impaired, seo optimization)
+| `<i>`      | Italic            | Italic (no meaning)          |
+| `<em>`     | Emphasis          | Italic + meaningful stress   | (for screen readers, visually impaired, seo optimization)
+| `<u>`      | Underline         | Underlines text              |
+| `<small>`  | Smaller text      | Makes text slightly smaller  |
+| `<mark>`   | Highlight         | Highlights text in yellow    |
+
+
+Semantic Tags:
+  🔸 What Does Semantic Mean in HTML?
+    In HTML, semantic elements have a meaning that tells both the browser and the developer what the content inside the
+    element represents. These tags give context to the page structure and make the page easier to understand for
+    both people and machines (like search engines or screen readers).
+
+  🔸 Why Semantic HTML Is Important:
+    Accessibility:
+      Screen readers can interpret semantic HTML better, making your content more accessible for users with disabilities.
+      SEO (Search Engine Optimization):
+      Search engines like Google use the structure and meaning provided by semantic tags to better understand the content of your page. It helps rank pages correctly.
+      Readability and Maintainability:
+
+Semantic tags make your code easier to read and maintain. Developers know exactly what the content represents just by looking at the tags.
+
+🔸 Examples of Semantic Tags:
+| **Tag**     | **Meaning**  | **Purpose**                                                                         |
+| ----------- | ------------ | ----------------------------------------------------------------------------------- |
+| `<header>`  | Header       | Defines the introductory content or navigation of the page.                         |
+| `<footer>`  | Footer       | Defines the footer, typically for copyright info or additional links.               |
+| `<article>` | Article      | Represents a self-contained piece of content, such as a blog post or news.          |
+| `<section>` | Section      | Defines sections of content, like chapters, headers, or sections of a page.         |
+| `<nav>`     | Navigation   | Represents navigation links.                                                        |
+| `<main>`    | Main content | Represents the primary content of the document.                                     |
+| `<aside>`   | Aside        | Represents content that's tangentially related to the main content (like sidebars). |
+
+
+🔸 Non-Semantic vs Semantic HTML
+  Non-Semantic Tags: Tags like <div> and <span> don't provide any information about the content they contain. They are used simply for styling and layout.
+    <div class="header">Welcome to My Website</div>   <!-- No meaning -->
+    <span class="highlight">Important</span>          <!-- No meaning -->
+
+  Semantic Tags: Tags like <header> and <article> clearly indicate the purpose of the content they contain.
+
+    <header>Welcome to My Website</header>    <!-- Clear meaning -->
+    <article>Important content goes here.</article>  <!-- Clear meaning -->

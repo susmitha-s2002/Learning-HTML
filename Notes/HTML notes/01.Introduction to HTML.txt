@@ -1,0 +1,68 @@
+🔸 Why is HTML named HTML?
+  HyperText:
+    “Hyper” means beyond or more.
+    “Text” refers to content (words, sentences).
+
+  HyperText allows you to link one piece of text (or element) to another.
+  Clicking a link takes you from one element to another, which is the hyper part (i.e., non-linear navigation).
+
+  Markup:
+    Markup means adding special tags to text to describe its structure.
+    HTML uses tags like <p> (paragraph), <h1> (heading), <a> (link) to "mark" text.
+
+  Language:
+    HTML is called a language because it has specific rules (syntax) that browsers understand.
+
+  🧩 In short:
+  HTML = HyperText + Markup + Language
+  It’s a language that structures text into clickable, navigable content on the web.
+
+
+
+🔸 Markup Language:
+  Purpose:
+    A markup language is used to define the structure and presentation of content (like text, images, etc.) on a web page or document.
+    It doesn’t perform calculations, logic, or actions by itself. It simply organizes or describes content.
+
+    Examples:
+      HTML (HyperText Markup Language): Used to structure and organize content on web pages.
+      XML (eXtensible Markup Language): Used to store and transport data.
+      Markdown: A lightweight markup language for formatting text.
+
+    Key Features:
+      Uses tags (e.g., <h1>, <p>, <a>) to mark up content.
+      Describes the structure and presentation of data.
+      No logic or decision-making involved (it doesn’t “do” anything beyond display content).
+
+🔸 Programming Language:
+  Purpose:
+    A programming language is used to write instructions that a computer can execute.
+    It allows you to create programs, perform calculations, control hardware, or manage the flow of information.
+
+    Examples:
+      Python, JavaScript, Java, C++: Used for creating software applications, websites, games, etc.
+
+    Key Features:
+      Uses syntax and commands to control the behavior of a computer.
+      Includes logic (e.g., conditionals like if statements, loops like for and while).
+      Can perform calculations, handle input/output, and manage state.
+
+
+| Aspect              | **Markup Language**             | **Programming Language**              |
+| ------------------- | ------------------------------- | ------------------------------------- |
+| **Purpose**         | Structures and formats content  | Performs operations and logic         |
+| **Examples**        | HTML, XML, Markdown             | Python, JavaScript, Java, C++         |
+| **Tags**            | Uses tags (e.g., `<h1>`, `<p>`) | No tags (uses code and statements)    |
+| **Logic/Execution** | No logic or execution (static)  | Can execute logic, calculations, etc. |
+| **Output**          | Displays content (text, images) | Performs tasks, calculates results    |
+
+HTML is used to get skeleton of the webpage.
+
+HTML File structure:
+<!DOCTYPE html> => this tells that this is an html document. this should be the first line of your html file.
+<html> => all the html content is wrapped inside this.
+<head> => contains meta_data about the page (not visible to users). include title, css, fonts etc.
+<body> => the visible content of the page
+
+
+Comments: <!-- -->

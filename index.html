@@ -1,153 +1,28 @@
 <!DOCTYPE html>
-<!-- Lang has to be mentioned for better searchability, and for readers to understand and for assistive technology-->
-<html lang="en-US">
+<html>
     <head>
-        <title>page title</title>
-        <style>
-            h5{
-                color: blue;
-            }
-        </style>
+        <title>sample title</title>
     </head>
     <body>
-        <!-- browser adds some space before and after the paragraph and headings -->
-        <h1>h1 heading</h1>
-        <h2>h2 heading</h2>
-        <h3>h3 heading</h3>
-        <h4>h4 heading</h4>
-        <h5>h5 heading</h5>
-        <h6>h6 heading</h6>
-        <h1 style="font-size: 100px;">H1 Heading with size as 100px</h1>
-        <p title="when you hover this, the value of title attribute will be shown">paragraph</p>
-        <p style="color:red;"> red text paragraph</p>
+        <h1>H1 heading</h1>
+        <h2>H2 heading</h2>
+        <h3>H3 heading</h3>
+        <h4>H4 heading</h4>
+        <h5>H5 heading</h5>
+        <h6>H6 heading</h6>
 
+        <p> p tag</p>
 
-        <!-- For a tag, the url has to be given in href attribute.-->
-        <!--
-            Attributes provide extra information about the element. attributes are always mentioned
-            in the start tag. examples: href, src attributes
-        -->
-        <a href="https://www.google.com/">Link for Google</a>
-
-        <h4>Image from the directory:</h4>
-        <img src="img.png" alt="this text will be shown if image is not loaded">
-
-        <h4>Image from the web url:</h4>
-        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_120x44dp.png" alt="this text will be shown if image is not loaded" width="200px;" height="100px;">
-
-        <h3> Even if you give spaces in the text
-
-        it won't be shown like that in html.
-            it will automatically remove the spaces.</h3>
-
-        <!-- to add horizontal line, we need to use hr tag-->
+        <br>
+        <p>above one is line break</p>
+        <p>below one is horizonatal rule</p>
         <hr>
 
-        <!-- to add line break, add br tag-->
-        <h3> hello this is h3 before line break</h3>
-        <br>
-        <h3>hello this is h3 after line break</h3>
-
-        <!-- this is the problem with poem, all will be shown in one line-->
-        <p>
-          My Bonnie lies over the ocean.
-
-          My Bonnie lies over the sea.
-
-          My Bonnie lies over the ocean.
-
-          Oh, bring back my Bonnie to me.
-        </p>
-
-        <!-- pre tag will show the text as it is. it preserves both spaces and line breaks-->
-        <pre>
-            My Bonnie lies over the ocean.
-            My Bonnie lies over the sea.
-
-          My Bonnie lies over the ocean.
-
-          Oh, bring back my Bonnie to me.
-        </pre>
-
-        <!-- to add styling fo html tags, use the following syntax-->
-        <h3 style="color:blue; background-color:red; font-family:courier;">this is h3 in red color with blue background with courier font family.</h3>
-        <h3 style="font-size:50px; text-align:center;">this is h3 with font-size 50px and text-align: center</h3>
-
-
-        <h2> Formatting: </h2>
-        <b>This is bold text</b> <br>
-        <strong>This is strong text [similar to bold]</strong><br>
-        <i>This is italic text</i><br>
-        <em>This is text inside em tag [similar to italic]</em><br>
-        <!-- em and strong tags are there for visually impaired users. screen reader will provide emphasis on these elements.-->
-        <small>This is smaller text</small><br>
-        <p><mark>abc</mark> is marked here.</p><br>
-        <p><del>abc</del> is delete here.</p><br>
-        <p><ins>abc</ins> is inside ins tag. text inside ins tag will get underlined.</p><br>
-        <p><sup>abc</sup> is in superscripted</p><br>
-        <p><sub>abc</sub> is in subscripted</p>
-
-        <!-- Quotation and Citation elements-->
-        <p>Here is a quote from WWF's website:</p>
-            <blockquote cite="http://www.worldwildlife.org/who/index.html">
-                this is quote from wwf website. i have kept this quote in blockquote tag. quotes will be indented.
-            </blockquote>
-
-        <p>this is paragraph <q>this is inside quotes. inside q tag.</q> abc</p>
-        <p>this is <abbr title="World Health Organization">WHO</abbr></p>
-
-        <p>this is address in next line. address will be in italic and there will be line break before and after:</p>
-        <address>
-            Written by John Doe.<br>
-            Visit us at:<br>
-            Example.com<br>
-            Box 564, Disneyland<br>
-            USA
-        </address>
-        <p><cite>This article </cite> is cited from the web page. it will be in italic</p>
-        <p><bdo dir="rtl">This text will be printed from right to left</bdo></p>
-
-        <p>*************</p>
-        <h2> Colors</h2>
-
-        <h1 style="background-color: red; color: yellow;">The background color is red, text color is yellow</h1>
-        <h1 style="background-color: rgb(255, 99, 71);">The background color is brick color.</h1>
-        <h1 style="background-color: rgba(255, 99, 71, 0.3);">
-            The background color is brick color.  here in the color i have added last letter called a, a means alpha (which tells how thick the color has to be) 0:transaprent 1:not transparent
-        </h1>
-
-        <h5>this is h5 with styling</h5>
-
-        <p>*****</p>
-        <h2>Links</h2>
-        <a href="https://www.google.com/">link for google. by default target="self" that means new page will open in same window</a><br>
-        <a href="https://www.google.com/" target="_blank">link for google will open in new tab. because target is set to blank in a tag.</a>
-        <br>
-        <a href="img.png">Click on this to go to img </a>
-        <br>
-        <p> the below image is a link, click on it. </p>
-        <a href="https://www.instagram.com"><img src="img.png" style="height:50px; width:50px;"></a><br>
-        <a href="mailto:sighakollisusmitha@gmail.com">to send mail</a><br>
-        <a href="img.png"><button>btn as link</button></a><br> <br>
-        <a href="https://www.facebook.com" title="facebook site"> facebook link</a>
-        <br>
-
-        <a href="#abc">this is book mark to div id</a>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <br><br><br>
-        <div id="abc"><p>abc div</p></div>
-
-        <p> the below one is a gif</p>
-        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW53c2FuNjF4b2FuNnQ0MmoyODEweDhzdGl4NTIxZnl3aHBkYXFiNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PkbdgoN6eUd2omXNk1/giphy.gif" alt="Computer Man" style="width:48px;height:48px;">
-
+        <b>this is bold text</b><br>
+        <strong>this is strong text</strong><br>
+        <i>this is italic text</i><br>
+        <em> this is em text</em><br>
+        <small>this is small text</small><br>
+        <mark>this is mark tag text</mark>
     </body>
 </html>
